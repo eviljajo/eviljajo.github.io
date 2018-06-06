@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+
+#canvas-wrap { position:relative } /* Make this a positioned parent */
+#overlay{ 
+    
+position:absolute; 
+top:400px; 
+left:300px; 
+font-family: 'Courier New', Courier, monospace;
+font-size: 40px;
+color: crimson;
+display: block;
+
+}
+
+ #canvas
+ {
+   background: #400040;
+   border: thin solid greenyellow;
+ }
+
+
+</style>
+<body>
+<div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+    <audio id="aud" src="toto.mp3"></audio>
+    <div id="overlay">CLICK ANYWHERE TO HEAR THE SOUND OF THE STARS!</div>
+
+</div>
+
+
+<script src="app2.js"> </script>
+
+    
+</body>
+
+
+
+</html>
